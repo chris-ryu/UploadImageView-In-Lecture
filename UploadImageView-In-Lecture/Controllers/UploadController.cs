@@ -32,7 +32,7 @@ namespace UploadImageView_In_Lecture.Controllers
         [HttpGet("image-proxy")]
         public async Task<IActionResult> GetImageFromWeb()
         {
-            const string url = "https://www.etri.re.kr/webzine/20171201/common/images/04-1.jpg";
+            const string url = "";
             byte[] fileBytes = await _httpClient.GetByteArrayAsync(url);
 
             string fileToWriteTo = Path.GetTempFileName();
